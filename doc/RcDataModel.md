@@ -29,24 +29,42 @@ The field `self` indicates the UUID of the local vehicle.
 
 ```json
 {
-  "version": "1.0.0",
-  "self": "705f5f1a-efaf-44aa-9cb8-a0fd6305567c",
-  "cars": {
-    "705f5f1a-efaf-44aa-9cb8-a0fd6305567c": {
-      "name": "Buggy",
-      "telemetry": {
-        "speed":      { "value": 3.2,  "unit": "m/s" },
-        "rpm":        { "value": 3200 },
-        "battery":    { "value": 7.2,  "unit": "V" },
-        "signal":     { "value": 85,   "unit": "%" },
-        "temperature":{ "value": 42.1, "unit": "C" }
+  "vehicles" : {
+    "9e296cc8-116c-4eac-8d4e-f491fe14fa60" : {
+      "name" : "testname",
+      "data" : {
+        "speed" : {
+          "value" : 100,
+          "unit" : "ms"
+        },
+        "rpm" : {
+          "value" : 100
+        },
+        "battery" : {
+          "value" : 100,
+          "unit" : "v"
+        },
+        "signal" : {
+          "value" : 100,
+          "unit" : "s"
+        },
+        "temperature" : {
+          "value" : 100,
+          "unit" : "c"
+        },
+        "type" : "car"
       },
-      "position": {
-        "value": { "x": 12.4, "y": 8.9 }
-      },
-      "timestamp": "2025-01-01T12:00:00Z"
+      "position" : {
+        "x" : 0,
+        "y" : 0,
+        "z" : null
+      }
     }
-  }
+  },
+  "type" : "full",
+  "version" : "1.0.0",
+  "self" : "9e296cc8-116c-4eac-8d4e-f491fe14fa60",
+  "timestamp" : "2025-11-21T13:17:34.1547336+01:00"
 }
 ```
 
